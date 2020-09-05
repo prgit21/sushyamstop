@@ -32,34 +32,6 @@
   </div>
   <p id="startime" class="center">Sep 5, 2020 9:00:00</p>
   <p id="timer" class="center" style="font-size: 40px;margin-top: 10%;"></p>
-  <script>
-    Date.prototype.addDays = function (days) {
-      this.setDate(this.getDate() + parseInt(days));
-      return this;
-    };
-
-    var countDownDate = new Date("Sep 12, 2020 9:00:00").getTime();;
-    var x = setInterval(function () {
-
-      var now = new Date().getTime();
-
-      var distance = countDownDate - now;
-
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
-
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("timer").innerHTML = "OML you did ittt";
-        alert("hurray!!!!");
-      }
-    }, 1000);
-  </script>
   </div>
   <p style="text-align: center;height: 50px;"><button class="btn btn-primary" type="button"
       style="width: 80;height: 50px;background-color: rgb(63,69,77);box-shadow: 0px 0px 7px rgb(0,0,0);border-color: rgb(0,0,0);">START</button>&nbsp;
@@ -71,6 +43,7 @@
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="assets/js/bs-init.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
