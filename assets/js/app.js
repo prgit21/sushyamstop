@@ -26,6 +26,28 @@ Date.prototype.addDays = function (days) {
   }, 1000);
 
 
-  var quotes=['Do your best','Bleh ','Bleh bleh'];
+  var quotes=[
+  'Do your best',
+  'Addiction is an adaptation. It’s not you. It’s the cage you live',
+  'Become addicted to constant and never-ending self-improvement',
+  'It’s going down into the abyss that we recover the treasures of life. Where you stumble, there lies your treasure',
+  'Focus on where you want to go, not where you currently are',
+  'Heal the heart, don’t hide the pain',
+  'Healing doesn’t mean the damage never existed. It means the damage no longer controls our lives',
+  'What is addiction really? It’s a sign, a signal, a symptom of distress. It’s a language that tells about a plight that must be understood ',
+  'If you can quit for a day, you can quit for a lifetime',
+  'Strength does not come from physical capacity. It comes from an indomitable will.',
+  'Recovery is hard. Regret is harder',
+  'You can’t defeat the darkness by keeping it caged inside of you',
+  'Courage isn’t having the strength to go on – it is going on when you don’t have strength',
+  'No matter how dark the night may get, your light will never burn out',
+  'In the end, some of your greatest pains become your greatest strengths',
+  'Believe you can and you’re halfway there',
+  'Our greatest glory is not in never failing, but in rising up every time we fail',
+  'It always seems impossible until it’s done',
+  'Fall seven times, stand up eight',
+  'You must do the things you think you cannot do',
+  
+];
   var randomNumber = Math.floor(Math.random()*quotes.length);
   document.getElementById("quotes").innerHTML=quotes[randomNumber];
