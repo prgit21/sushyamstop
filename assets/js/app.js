@@ -26,8 +26,7 @@ var x = setInterval(function() {
 }, 1000);
 
 
-var quotes = [
-    'Lets go buddy',
+var quotes = [ 'Lets go buddy',
     'Do your best',
     'Addiction is an adaptation. It’s not you. It’s the cage you live',
     'Become addicted to constant and never-ending self-improvement',
@@ -51,6 +50,8 @@ var quotes = [
     'You are someones sweetheart',
     'They need you',
     'We are with you buddy, always supporting you',
+    'That was definietly a lie','we all need help now'
+    'how to give up?'
 ];
 var randomNumber = Math.floor(Math.random() * quotes.length);
 document.getElementById("quotes").innerHTML = quotes[randomNumber];
